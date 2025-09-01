@@ -10,7 +10,7 @@ namespace ITMS.Plugins.EFCoreSql
             
         }
 
-        // OPTIONAL: if you still get “provider not configured”, add this fallback:
+        // OPTIONAL: if “provider not configured”, add this fallback:
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{
         //    if (!optionsBuilder.IsConfigured)
@@ -21,7 +21,6 @@ namespace ITMS.Plugins.EFCoreSql
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Rename table to correct spelling
             modelBuilder.Entity<Inventory>().ToTable("Inventories");
             modelBuilder.Entity<Inventory>().HasData(
                 new Inventory { InventoryId = 1, InventoryName = "CPU", Price = 250, Quantity = 10 },

@@ -28,11 +28,6 @@ builder.Services.AddTransient<IViewInventoryByIdUseCase, ViewInventoryByIdUseCas
 
 builder.Services.AddTransient<IDeleteInventoryUseCase, DeleteInventoryUseCase>();
 
-//builder.Services.AddDbContext<ITMSContext>(options =>
-//{
-//    options.UseSqlServer = true;
-//});
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
