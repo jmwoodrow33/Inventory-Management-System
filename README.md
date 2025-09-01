@@ -1,1 +1,1 @@
-# ITMS
+# Inventory-Management-System
