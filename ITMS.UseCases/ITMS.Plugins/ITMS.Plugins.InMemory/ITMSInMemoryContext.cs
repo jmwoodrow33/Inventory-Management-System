@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace ITMS.Plugins.InMemory
 {
-    public class ITMSContext : DbContext
+    public class ITMSInMemoryContext : DbContext
     {
-        public ITMSContext(DbContextOptions options) : base(options)
+        public ITMSInMemoryContext(DbContextOptions options) : base(options)
         {
             
         }

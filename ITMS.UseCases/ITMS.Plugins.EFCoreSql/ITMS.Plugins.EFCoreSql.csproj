@@ -1,21 +1,10 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\ITMS.UseCases\ITMS.CoreBusiness\ITMS.CoreBusiness.csproj" />
-    <ProjectReference Include="..\ITMS.UseCases\ITMS.Plugins.EFCoreSql\ITMS.Plugins.EFCoreSql.csproj" />
-    <ProjectReference Include="..\ITMS.UseCases\ITMS.UseCases\ITMS.UseCases.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Components\Pages\NewFolder1\" />
-    <Folder Include="Components\Pages\NewFolder\" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.8">
@@ -27,6 +16,12 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ITMS.CoreBusiness\ITMS.CoreBusiness.csproj" />
+    <ProjectReference Include="..\ITMS.Plugins\ITMS.Plugins.InMemory\ITMS.Plugins.InMemory.csproj" />
+    <ProjectReference Include="..\ITMS.UseCases\ITMS.UseCases.csproj" />
   </ItemGroup>
 
 </Project>

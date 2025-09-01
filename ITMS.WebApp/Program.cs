@@ -1,15 +1,22 @@
-using ITMS.Plugins.InMemory;
+//using ITMS.Plugins.InMemory;
 using ITMS.UseCases.Inventories;
 using ITMS.UseCases.Inventories.Interfaces;
 using ITMS.UseCases.PluginInterfaces;
 using ITMS.WebApp.Components;
+using Microsoft.EntityFrameworkCore;
+using ITMS.Plugins.EFCoreSql;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContextFactory<ITMSContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("InventoryManagement"));
+});
+
 builder.Services.AddRazorComponents();
 
-builder.Services.AddSingleton<IInventoryRepository, InventoryRepository>();
+builder.Services.AddSingleton<IInventoryRepository, InventoryEFCoreRepository>();
 
 builder.Services.AddTransient<IViewInventoriesByNameUseCase, ViewInventoriesByNameUseCase>();
 

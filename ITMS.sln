@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMS.Plugins.InMemory", "IT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMS.CoreBusiness", "ITMS.UseCases\ITMS.CoreBusiness\ITMS.CoreBusiness.csproj", "{EE8C1664-12D5-9291-7CE6-E2DCC8654A2B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMS.Plugins.EFCoreSql", "ITMS.UseCases\ITMS.Plugins.EFCoreSql\ITMS.Plugins.EFCoreSql.csproj", "{C5C0C73D-7BEE-4DDA-BCFF-D5E823AA94C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{EE8C1664-12D5-9291-7CE6-E2DCC8654A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE8C1664-12D5-9291-7CE6-E2DCC8654A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE8C1664-12D5-9291-7CE6-E2DCC8654A2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5C0C73D-7BEE-4DDA-BCFF-D5E823AA94C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5C0C73D-7BEE-4DDA-BCFF-D5E823AA94C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5C0C73D-7BEE-4DDA-BCFF-D5E823AA94C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5C0C73D-7BEE-4DDA-BCFF-D5E823AA94C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

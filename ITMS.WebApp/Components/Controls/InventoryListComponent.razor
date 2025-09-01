@@ -1,6 +1,6 @@
 ﻿@inject IViewInventoriesByNameUseCase ViewInventoriesByNameUseCase
 
-<ul>
+@* <ul>
     @if (inventories is not null && inventories.Count > 0)
     {
         foreach (var inv in inventories)
@@ -10,7 +10,7 @@
             </li>
         }
     }
-</ul>
+</ul> *@
 
 <table class="table">
     <thead>
@@ -23,13 +23,13 @@
         </tr>
     </thead>
     <tbody>
-            @if (inventories is not null && inventories.Count > 0)
+        @if (inventories is not null && inventories.Count > 0)
+        {
+            foreach (var inv in inventories)
             {
-                foreach (var inv in inventories)
-                {
-                    <InventoryListItemComponent Inventory="inv"></InventoryListItemComponent>
-                }
+                <InventoryListItemComponent Inventory="inv"></InventoryListItemComponent>
             }
+        }
     </tbody>
 </table>
 
