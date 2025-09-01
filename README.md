@@ -24,3 +24,5 @@ A simple inventory management Web App built with **Blazor Server (.NET 8)**, **E
 - Create / Edit / Delete items
 - Seeded sample data via migrations
 
+[Notion]([https://example.com](https://efficacious-minute-695.notion.site/Inventory-Management-System-2586de0a81e48090a50bf07b5b7f3b3e))
+
